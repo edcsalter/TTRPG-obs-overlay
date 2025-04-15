@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a;
+  overflow: hidden;
+  font-family: 'Cinzel', serif;
+  color: #ddd;
+}
+
+.dm-camera {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  height: 300px;
+  border: 4px solid #550000;
+  background: #111;
+  z-index: 10;
+}
+
+.dm-title {
+  text-align: center;
+  margin-top: -30px;
+  font-size: 1.5em;
+  color: #aaa;
+}
+
+.game-feed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  /* Your game feed will be in OBS underneath this HTML layer */
+}
+
+.players {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 20;
+}
+
+.player-frame {
+  width: 300px;
+  height: 180px;
+  background: rgba(25, 25, 25, 0.8);
+  border: 2px solid #444;
+  padding: 10px;
+  color: #ccc;
+  font-size: 0.9em;
+}
